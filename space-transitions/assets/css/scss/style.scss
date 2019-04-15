@@ -1,0 +1,67 @@
+
+/**
+ *
+ * This file is part of <santanamic/css-animation>
+ * Created by WILLIAN SANTANA <https://github.com/santanamic>
+ *
+ * For the information of copyright and license you should read the file
+ * LICENSE which is distributed with this source code.
+ *
+ * Para a informaçao dos direitos autorais e de licença voce deve ler o arquivo
+ * LICENSE que é distribuído com este código-fonte.
+ *
+ * Para obtener la información de los derechos de autor y la licencia debe leer
+ * el archivo LICENSE que se distribuye con el código fuente.
+ *
+ * @author @santanamic
+ *
+ */  
+ 
+ @import './variables.scss';
+ @import './keyframes.scss';
+
+.space {
+  width: auto;
+  height: auto;
+  &:before {
+    content: "";
+    opacity: 0.95;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url( $site-background ) repeat center;
+    background-size: cover;
+  }
+  .earth {
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    img {
+      height: 200px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200px;
+    }
+  }
+  .moon-container {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    .moon {
+      animation: spin 20s linear infinite;
+      background: none;
+      height: 50px;
+      pointer-events: none;
+      transform-origin: 25px;
+      width: 50px;
+      img {
+        height: 50px;
+        transform: translateX(-160px) translateY(-160px);
+        width: 50px;
+      }
+    }
+  }
+}

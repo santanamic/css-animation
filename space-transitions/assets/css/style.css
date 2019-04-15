@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/**
+ *
+ * This file is part of <santanamic/css-animation>
+ * Created by WILLIAN SANTANA <https://github.com/santanamic>
+ *
+ * For the information of copyright and license you should read the file
+ * LICENSE which is distributed with this source code.
+ *
+ * Para a informaçao dos direitos autorais e de licença voce deve ler o arquivo
+ * LICENSE que é distribuído com este código-fonte.
+ *
+ * Para obtener la información de los derechos de autor y la licencia debe leer
+ * el archivo LICENSE que se distribuye con el código fuente.
+ *
+ * @author @santanamic
+ *
+ */
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+.space {
+  width: auto;
+  height: auto;
+}
+
+.space:before {
+  content: "";
+  opacity: 0.95;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url("../img/space.jpg") repeat center;
+  background-size: cover;
+}
+
+.space .earth {
+  position: absolute;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+}
+
+.space .earth img {
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+}
+
+.space .moon-container {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 25px);
+}
+
+.space .moon-container .moon {
+  -webkit-animation: spin 20s linear infinite;
+          animation: spin 20s linear infinite;
+  background: none;
+  height: 50px;
+  pointer-events: none;
+  -webkit-transform-origin: 25px;
+          transform-origin: 25px;
+  width: 50px;
+}
+
+.space .moon-container .moon img {
+  height: 50px;
+  -webkit-transform: translateX(-160px) translateY(-160px);
+          transform: translateX(-160px) translateY(-160px);
+  width: 50px;
+}
+/*# sourceMappingURL=style.css.map */
