@@ -1,0 +1,58 @@
+
+/**
+ *
+ * This file is part of <santanamic/css-animation>
+ * Created by WILLIAN SANTANA <https://github.com/santanamic>
+ *
+ * For the information of copyright and license you should read the file
+ * LICENSE which is distributed with this source code.
+ *
+ * Para a informaçao dos direitos autorais e de licença voce deve ler o arquivo
+ * LICENSE que é distribuído com este código-fonte.
+ *
+ * Para obtener la información de los derechos de autor y la licencia debe leer
+ * el archivo LICENSE que se distribuye con el código fuente.
+ *
+ * @author @santanamic
+ *
+ */  
+ 
+@import './variables.scss';
+@import './keyframes.scss';
+
+body {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  background-color: $site-background;
+  overflow-x: hidden;
+  padding-bottom: 142px;
+}
+
+.pacman{
+  margin:40px 10px;
+  .pacman-top{
+    background-color: $pacman-color;
+    height:100px;
+    width:200px;
+    border-radius:100px 100px 0 0;
+    animation: spin1 0.5s infinite linear;
+  }
+  .pacman-bottom{
+    background-color: $pacman-color;
+      height:100px;
+      width:200px;
+      border-radius:0 0 100px 100px;
+      animation: spin2 0.5s infinite linear;
+    }
+    .feed {
+      margin-top: -185px;
+      margin-left:15px;
+      width: 45px;
+      height: 45px;
+      border-radius: 30%;
+      animation: eat 1s linear 0s infinite;
+      }  
+}

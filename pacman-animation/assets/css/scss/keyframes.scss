@@ -1,0 +1,31 @@
+@keyframes spin1 {
+	0%  {transform: rotate(0deg);}
+	50% {transform: rotate(-35deg);}
+  
+}
+@keyframes spin2 {
+	0%  {transform: rotate(0deg);}
+  50% {transform: rotate(35deg);}	
+}
+
+@keyframes eat {
+	0% { box-shadow: 
+      100px 65px 0 0 white, 
+      300px 65px 0 0 white, 
+      500px 65px 0 0 white, 
+      700px 65px 0 0 white,
+      900px 65px 0 0 white, 
+      1100px 65px 0 0 white, 
+      1300px 65px 0 0 white;
+  }
+  100% { box-shadow: 
+      0px 65px 0 0 white, 
+      100px 65px 0 0 white,
+      300px 65px 0 0 white, 
+      500px 65px 0 0 white, 
+      700px 65px 0 0 white, 
+      900px 65px 0 0 white, 
+      1100px 65px 0 0 white;
+    }
+}
+
