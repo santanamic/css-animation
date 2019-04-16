@@ -19,7 +19,7 @@ This simple example uses CSS and images to illustrate the rotation of the moon a
 
 
 ### PAC-MAN
-This example uses only CSS for animations. It is inspired by the classic PAC-MAN video game game. [Click here.](https://santanamic.github.io/css-animation/pacman-animation/ "PAC-MAN CSS")
+This example uses only CSS for animations. It is inspired by the classic PAC-MAN video game. [Click here.](https://santanamic.github.io/css-animation/pacman-animation/ "PAC-MAN CSS")
 
 ![Screenshot](https://santanamic.github.io/css-animation/pacman-animation/assets/img/screenshot.jpg)
 
