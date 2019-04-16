@@ -1,0 +1,77 @@
+
+/**
+ *
+ * This file is part of <santanamic/css-animation>
+ * Created by WILLIAN SANTANA <https://github.com/santanamic>
+ *
+ * For the information of copyright and license you should read the file
+ * LICENSE which is distributed with this source code.
+ *
+ * Para a informaçao dos direitos autorais e de licença voce deve ler o arquivo
+ * LICENSE que é distribuído com este código-fonte.
+ *
+ * Para obtener la información de los derechos de autor y la licencia debe leer
+ * el archivo LICENSE que se distribuye con el código fuente.
+ *
+ * @author @santanamic
+ *
+ */  
+ 
+@import './variables.scss';
+@import './keyframes.scss';
+
+body {
+  background: #000 url( $site-background );
+}
+
+.starwars {
+  position: absolute;
+  width: 34em;
+  height: 17em;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve3d;
+  perspective: 800px;
+  .star, .wars, .byline {
+    position: absolute;
+  }  
+  .star {
+    width: 100%;
+    top: -0.75em;
+    animation: star 10s ease-out infinite;
+  }
+  .wars {
+    width: 100%;
+    bottom: -0.5em;
+    animation: wars 10s ease-out infinite;
+  }
+  .byline {
+    top: 29%;
+    left: -2em;
+    right: -2em;
+    animation: move-byline 10s linear infinite;
+    font-size: 2.25em;
+    font-family: "ITC Serif Gothic", Lato;
+    letter-spacing: 0.4em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    span {
+      animation: spin-letters 10s linear infinite;
+      display: inline-block;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .starwars {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .starwars {
+    font-size: 7px;
+  }
+}
