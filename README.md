@@ -23,4 +23,4 @@ This example uses only CSS for animations. It is inspired by the classic PAC-MAN
 
 ![Screenshot](https://santanamic.github.io/css-animation/pacman-animation/assets/img/screenshot.jpg)
 
-> On May 22, 1980, the Pac-Man video game was released in Japan and by October of the same year, it was released in the United States. The yellow, pie-shaped Pac-Man character, who travels around a maze trying to eat dots and avoid four mean ghosts, quickly became an icon of the 1980s. To this day, Pac-Man remains one of the most popular video games in history.
+> On May 22, 1980, the Pac-Man video game was released in Japan and by October of the same year, it was released in the United States. The yellow, pie-shaped Pac-Man character, who travels around a maze trying to eat dots and avoid four mean ghosts, quickly became an icon of the 1980s. To this day, Pac-Man remains one of the most popular video games in history. 
